@@ -1,33 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robson, o professor</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jogo 3D de Carro — Demo</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <script>
-
-    let x = "pneumoultramicroscopicossilicovulcanoconiótico"
-    console.log(x)
-    console.log(typeof(x))
-    
-    let y = 10
-    console.log(y)
-    console.log(typeof(y))
-
-    let w = 17.10
-    console.log(w)
-    console.log(typeof(w))
-
-    let b = Boolean
-    console.log(b)
-    console.log(typeof(b))
-
-    let a = y*w;
-    let z = y*a;
-    console.log(a)
-    console.log(z)
-  </script>
+<div id="container"></div>
+<div id="hud">
+<div id="score">Pontos: 0</div>
+<div id="speed">Velocidade: 0</div>
+</div>
+<div id="overlay">
+<h1>Jogo 3D de Carro</h1>
+<button id="startBtn">Clique para começar (ativa som)</button>
+<div id="hint">Use ← → para virar, ↑ para acelerar, ↓ para frear. Evite obstáculos!</div>
+<div class="mobile-note">Em dispositivos móveis, toque e segure para acelerar e arraste para virar.</div>
+</div>
+<div id="gameover">
+<h2>Você bateu!</h2>
+<div id="finalScore"></div>
+<button id="restartBtn">Reiniciar</button>
+</div>
+<script src="https://unpkg.com/three@0.153.0/build/three.min.js"></script>
+<script src="game.js"></script>
 </body>
 </html>
