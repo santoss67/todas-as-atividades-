@@ -5,7 +5,7 @@
 const ASSETS = {
     ambient: 'ambient.mp3',
     engine: 'engine.mp3',
-    crash:  'crash.mp3'
+    
   };
   
   let scene, camera, renderer, clock;
@@ -255,4 +255,5 @@ const ASSETS = {
   restartBtn.addEventListener('click', ()=>{ restartGame(); });
   
   init();
+
   
